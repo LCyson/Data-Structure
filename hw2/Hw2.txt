@@ -1,0 +1,121 @@
+Problem 1
+
+Part(a): README.md is “unmodified”
+Part(b): README.md is at “unmodified” and fun_problem.txt is “untracked”
+Part(c): README.md and fun_problem.txt are “staged” and ready for commit
+Part(d): README.md and fun_problem.txt are “modified”
+Part(e): README.md is “modified”; fun_problem.txt is “unmodified” and ready to push. The content of fun_problem.txt is deleted because the “git checkout” makes it back to the modified stage. 
+Part(f): There are two stages of the README.md, one is without "Fancy git move" and “modified” and ready to commit; another one is with "Fancy git move" and “modified” and not staged to commit.
+
+
+
+Problem 5
+
+bool empty() const:
+
+The stack’s empty function will call the empty function of the doubly linked list’s empty function. And the dll empty() will call its own clear function below.
+void LListDbl::clear()
+{
+  while(head_ != NULL){						-> n
+	//some codes
+  }
+	//some codes
+}
+
+Thus, Θ(n)
+
+
+
+
+void push(const double& val)
+
+The stack’s push function will call the insert function of the doubly linked list below.
+void LListDbl::insert(int loc, const double& val)
+{
+  if (loc>size_)								1
+  {
+    //some codes
+  }
+
+//some codes
+ if (loc == 0)  
+  {
+    if (size_==0)
+    {
+    //some codes
+    }
+    else{
+      Item *temp = getNodeAt(loc);						n
+    //some codes
+      tail_= getNodeAt(size_-1);					n
+    }
+  }
+  else if (loc == size_)
+  {
+      Item *temp = getNodeAt(loc-1);					n
+    //some codes
+  }
+  else{
+  Item *temp1 = getNodeAt(loc);						n
+  Item *temp = getNodeAt(loc-1);					n
+    //some codes		
+  tail_= getNodeAt(size_-1);			n
+  }
+  size_++;
+}
+
+Thus the worst-case runtime will be Θ(n).
+
+
+
+
+
+double const& top() const
+
+The stack’s top function will call the get function of the doubly linked list below.
+double& LListDbl::get(int loc)
+{
+  Item *temp = getNodeAt(loc);							n
+  return temp->val;									1
+}
+
+Thus the worst case runtime will be Θ(n)
+
+
+
+
+
+void pop()
+
+
+The stack’s pop function will call the empty function (Θ(n)) or the remove function of the doubly linked list below.
+void LListDbl::remove(int loc)
+{
+    //some codes
+  if(loc == 0){
+    if (size_ == 1)
+    {
+      Item *temp = getNodeAt(loc); 							n
+    //some codes
+    }
+    Item *temp = getNodeAt(loc);  							n
+    head_ = getNodeAt(loc+1); 							n
+    //some codes
+  }
+  else if(loc == size_-1){
+    Item *temp_prev = getNodeAt(loc-1);  					n
+    Item *temp = getNodeAt(loc);  							n
+    //some codes
+  }
+  else{
+  Item *temp_prev = getNodeAt(loc-1); 							n
+  Item *temp_next = getNodeAt(loc+1); 							n
+  Item *temp = getNodeAt(loc); 	 							n
+    //some codes
+  }
+}
+
+Thus the worst case runtime will be Θ(n)
+
+
+Conclusion: the choose for design decision is quite reasonable because the worst-case runtime of all functions are Θ(n), which is pretty efficient.

@@ -1,0 +1,7 @@
+initMoves	BFS	TilesOutofPlace		Manhattan
+20	 	2317	30	 		27
+40		589042	231			80
+60			47446			971
+80			36824			595
+100						10752
+150						80041

@@ -1,0 +1,51 @@
+<product> 
+book
+Data Abstraction & Problem Solving with C++
+79.99
+20
+978-013292372-9
+Carrano and Henry
+book
+Great Men and Women of Troy
+19.5
+0
+978-000000000-1
+Tommy Trojan
+Clothing
+Men's Fitted Shirt
+39.99
+23
+Medium
+J. Crew
+Movie
+Whiplash DVD
+17.99
+1
+Drama
+R
+</product> 
+<users> 
+ttrojan 19 20.02 0
+redekopp 36 11 1
+aaroncot 30 61.5 1
+</users> 
+<reviews> 
+Whiplash DVD
+4 2013-04-05 Good thing our CS professors are nicer than J.K. Simmons was
+Whiplash DVD
+5 2014-01-05 Excellent...Oscar worthy
+Men's Fitted Shirt
+1 2013-12-25 NOT REQUIRED!!
+Great Men and Women of Troy
+2 2013-12-25 what's this?
+Data Abstraction & Problem Solving with C++
+3 2014-12-25 Is this required?
+Data Abstraction & Problem Solving with C++
+3 2013-11-25 Is this required?
+Data Abstraction & Problem Solving with C++
+3 2013-12-23 Is this required?
+Data Abstraction & Problem Solving with C++
+3 2013-06-25 Is this required?
+Men's Fitted Shirt
+2 2234-12-23 this is  ashit
+</reviews> 
