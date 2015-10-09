@@ -15,6 +15,7 @@ Running the Program:
 Run with  ./CommunitySearch dbSmaller.txt 
 
 Additional Notes:
+
 1. Login by creating a new user or using username: redekopp, password:password.
 
 2. You can search the key words by using the OrSearch or the AndSearch on the left side of the GUI window.
